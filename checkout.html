@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | ShopLab</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/config.js"></script>
+  <script src="https://unpkg.com/@adobe/adobe-client-data-layer@2.0.2/dist/adobe-client-data-layer.min.js" async></script>
+</head>
+<body data-page="checkout">
+  <main class="wrap">
+    <h1>Checkout</h1>
+    <div class="two-col">
+      <form id="checkoutForm" class="panel" data-form-name="checkout" novalidate>
+        <h3>Shipping</h3>
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name"></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="pincode">PIN code</label><input id="pincode" name="pincode" inputmode="numeric" maxlength="6" placeholder="110001"></div>
+        <fieldset id="paymentFieldset">
+          <legend>Payment (demo — nothing is charged)</legend>
+          <label><input type="radio" name="payment" value="upi"> UPI</label>
+          <label><input type="radio" name="payment" value="card"> Card</label>
+          <label><input type="radio" name="payment" value="cod"> Cash on delivery</label>
+        </fieldset>
+        <div class="field"><label for="coupon">Coupon code (optional)</label><input id="coupon" name="coupon" placeholder="FEST10"></div>
+        <button class="btn" type="submit">Place order</button>
+        <span class="form-msg"></span>
+      </form>
+      <div id="orderSummary"></div>
+    </div>
+  </main>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/datalayer.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

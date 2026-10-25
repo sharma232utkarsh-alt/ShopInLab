@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | ShopLab</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/config.js"></script>
+  <script src="https://unpkg.com/@adobe/adobe-client-data-layer@2.0.2/dist/adobe-client-data-layer.min.js" async></script>
+</head>
+<body data-page="login">
+  <main class="wrap narrow">
+    <form id="loginForm" class="panel" data-form-name="login" novalidate>
+      <h1>Login</h1>
+      <p class="muted">Demo only — any email and a 4+ character password works. Nothing is stored on a server.</p>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="username"></div>
+      <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password"></div>
+      <button class="btn" type="submit">Login</button>
+      <span class="form-msg"></span>
+    </form>
+  </main>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/datalayer.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
